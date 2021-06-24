@@ -1,0 +1,134 @@
+[
+    {
+        "name": "trab_id",
+        "dbType": "integer,true",
+        "htmlType": null,
+        "validations": null,
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "ent_id",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": "nullable|integer|nullable|integer",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "trab_nombres",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100|nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "trab_apellidos",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100|nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "trab_genero",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": "nullable|integer|nullable|integer",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "trab_estado_civil",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": "nullable|integer|nullable|integer",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "trab_telefono",
+        "dbType": "string,10:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:10|nullable|string|max:10",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "trab_correo",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100|nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "trab_cedula",
+        "dbType": "string,13:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:13|nullable|string|max:13",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "trab_rol_trabajo",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100|nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,Entidad,ent_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,CallCenter,trab_id"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,CallCenter,servicio_prestado"
+    }
+]

@@ -1,0 +1,94 @@
+[
+    {
+        "name": "ent_id",
+        "dbType": "integer,true",
+        "htmlType": null,
+        "validations": null,
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "ent_rep_legal",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100|nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "ent_nombre_entidad",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100|nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "ent_ubicacion",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100|nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "ent_correo",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100|nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "ent_telefono",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": "nullable|integer|nullable|integer",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "ent_sitio_web",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100|nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Factura,ent_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Trabajadore,ent_id"
+    }
+]

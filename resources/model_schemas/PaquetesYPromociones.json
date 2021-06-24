@@ -1,0 +1,94 @@
+[
+    {
+        "name": "prom_id",
+        "dbType": "integer,true",
+        "htmlType": null,
+        "validations": null,
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "srv_id",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": "nullable|integer|nullable|integer",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "prom_descuentos",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100|nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "prom_planes_prepago",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100|nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "prom_planes_pospago",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100|nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "prom_combos_bonos",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100|nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "prom_celulares_promocion",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100|nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,ServicioPrestado,srv_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,CallCenter,prom_id"
+    }
+]

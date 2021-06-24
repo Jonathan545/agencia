@@ -1,0 +1,102 @@
+[
+    {
+        "name": "fadet_id",
+        "dbType": "integer,true",
+        "htmlType": null,
+        "validations": null,
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "fac_id",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": "nullable|integer|nullable|integer",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "fac_tipo_pago",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": "nullable|integer|nullable|integer",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "fac_descripcion",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100|nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "fac_valor_servicio",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100|nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "fac_descuento",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": "nullable|integer|nullable|integer",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "fac_iva",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": "nullable|integer|nullable|integer",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "fac_total",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": "nullable|integer|nullable|integer",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,Factura,fac_id"
+    }
+]

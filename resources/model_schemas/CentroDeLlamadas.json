@@ -1,0 +1,126 @@
+[
+    {
+        "name": "call_id",
+        "dbType": "integer,true",
+        "htmlType": null,
+        "validations": null,
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "cli_id",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": "nullable|integer|nullable|integer",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "prom_id",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": "nullable|integer|nullable|integer",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "trab_id",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": "nullable|integer|nullable|integer",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "call_ayuda_cliente",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100|nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "call_contrato_servicios",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100|nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "call_servicios_tecnicos",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100|nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "call_soluciones_problemas",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100|nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "call_puntos_pago",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100|nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,Trabajadore,trab_id"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,User,cli_id"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,PaquetesYPromocione,prom_id"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,Trabajadore,servicio_prestado"
+    }
+]
